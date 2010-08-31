@@ -1,0 +1,16 @@
+---
+layout: default
+title: Home
+summary: Smalltalk, Seaside, Ruby and more...
+---
+<div id="home">
+  <h3>Posts</h3>
+  <ol id="posts">
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <p>{{ post.summary }}</p>
+      </li>
+    {% endfor %}
+  </ol>
+</div>

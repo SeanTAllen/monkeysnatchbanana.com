@@ -1,0 +1,48 @@
+body
+{
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin-top: 10px;
+}
+
+#header 
+{
+  background: #00A4DA;
+  color: #fff;
+  overflow: visible;
+  z-index: 10;
+  text-align: left;
+  border: 1px solid gray;
+
+}
+
+#content
+{
+  padding: 30px 60px 30px 60px;
+}
+
+#footer
+{
+  margin: 10px 0px 10px 0px;
+  padding: 20px 80px 20px 80px;
+  overflow: visible;
+  z-index: 10;
+  border-top: 1px solid #E0E0E0;
+  font-size: 80%;
+}
+
+#footer span
+{
+  padding-right: 36px;
+}
+
+.footnote
+{
+  font-size: 80%;
+}
+
+#posts li
+{
+  list-style: disc;
+}
