@@ -9,7 +9,7 @@ h3. Why Reverse Proxy a.k.a Why Not FastCGI?
 
 Transparency.
 
-FastCGI setups are opaque. You can't easily test all aspects of it. Unless you write your own FastCGI client, debugging configuration problems can be very difficult. Lets imagine for a moment that are trying to debug a problem with your application&mdash; the issue might be in the front end server or it might be in the Seaside application server. When you are using FastCGI, all your interactions with your application server are routed through the front end server which acts as a client for you. If you are reverse proxying to your Seaside application running at http://127.0.0.1:8080/, you can fire up lynx[1] and hit the application directly. No error from the application? Probably a front end server issue. It might be slightly hyperbolic, but I can't count the number of hours of head scratching this has saved me.
+FastCGI setups are opaque. You can't easily test all aspects of it. Unless you write your own FastCGI client, debugging configuration problems can be very difficult. Lets imagine for a moment that are trying to debug a problem with your application-- the issue might be in the front end server or it might be in the Seaside application server. When you are using FastCGI, all your interactions with your application server are routed through the front end server which acts as a client for you. If you are reverse proxying to your Seaside application running at http://127.0.0.1:8080/, you can fire up lynx[1] and hit the application directly. No error from the application? Probably a front end server issue. It might be slightly hyperbolic, but I can't count the number of hours of head scratching this has saved me.
 
 h3. Reverse Proxying to Seaside Options
 
@@ -57,7 +57,7 @@ If you've never seen a nginx configuration file before that might be quite a bit
 
 h4. Multiple Applications Per Domain 
 
-For our multiple applications per domain example, we are going to setup example.com to server any of the example Seaside applications. All the example Seaside applications start with their URI path with _/examples_&mdash; a nicety we will take advantage of.
+For our multiple applications per domain example, we are going to setup example.com to server any of the example Seaside applications. All the example Seaside applications start with their URI path with _/examples_-- a nicety we will take advantage of.
 
 {% highlight nginx linenos %}
 server

@@ -7,7 +7,7 @@ published: true
 
 So, you are humming along developing your GLASS hosted Seaside application. If you are following the proscribed development path, your application is running in Pharo and you've started porting it to GLASS when a problem arises:
 
-Your application needs to make calls out to a secure web service ( merchant processor etc ) but, GLASS doesn't have a native https client. The Pharo "cryptography package:"http://www.squeaksource.com/Cryptography.html implements an https client which you could port to Gemstone, but the process model it uses doesn't map nicely and you have better things to do with your time. You could wrap up the "C OpenSSL library":http://www.openssl.org/ and access it from Smalltalk&mdash; also a large amount of work or... you could go for the quick, dirty and effective approach: open a regular http connection and run it through a https proxy. This article covers the last option.
+Your application needs to make calls out to a secure web service ( merchant processor etc ) but, GLASS doesn't have a native https client. The Pharo "cryptography package:"http://www.squeaksource.com/Cryptography.html implements an https client which you could port to Gemstone, but the process model it uses doesn't map nicely and you have better things to do with your time. You could wrap up the "C OpenSSL library":http://www.openssl.org/ and access it from Smalltalk-- also a large amount of work or... you could go for the quick, dirty and effective approach: open a regular http connection and run it through a https proxy. This article covers the last option.
 
 h3. Http to Https Proxying
 
