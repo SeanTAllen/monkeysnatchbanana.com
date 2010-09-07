@@ -11,35 +11,17 @@ I've gone through a number of twitter clients, switching as I've found new featu
 
 h3. Must Have Features
 
-<dl>
-  <dt>Mac OS X</dt>
-  <dd>I use Mac OS X.</dd>
-  
-  <dt>Multiple Accounts</dt>
-  <dd>I have multiple accounts and need to be able to easily switch between them.</dd>
-  
-  <dt>Threaded Conversations</dt>
-  <dd>Twitter became far more useful to me when I started using a client that supported threading conversations.</dd>
-  
-  <dt>Remember Last Read Tweet Per View</dt>
-  <dd>If the client doesn't support remembering the last read tweet and returning you back there, it isn't useful it me. It needs to remember the last read tweet in each view I'm in: main stream by account, lists etc.</dd>
-  
-  <dt>Account Control</dt>
-  <dd>Echofon has a feature I've found to be a massive time saver: Click on an account name and it opens up a side window with a their tweet stream plus controls change lists the account is in along with follow, unfollow, block and report as spam options.</dd>
-</dl>
+- Mac OS X := I use Mac OS X.
+- Multiple Accounts := I have multiple accounts and need to be able to easily switch between them.
+- Threaded Conversations := Twitter became far more useful to me when I started using a client that supported threading conversations.
+- Remember Last Read Tweet Per View := If the client doesn't support remembering the last read tweet and returning you back there, it isn't useful it me. It needs to remember the last read tweet in each view I'm in: main stream by account, lists etc.
+- Account Control := Echofon has a feature I've found to be a massive time saver: Click on an account name and it opens up a side window with a their tweet stream plus controls change lists the account is in along with follow, unfollow, block and report as spam options.
   
 h3. Nice To Have Features
 
-<dl>
-  <dt>Built in Translation</dt>
-  <dd>I follow non-english speakers and it would be nice to be able to press a translate button to see what their non-english tweets are. Bonus points for being able to set specific users to be auto-translated.</dd>
-  
-  <dt>Muting</dt>
-  <dd>Ability to mute a user or hashtag for a period of time</dd>
-  
-  <dt>Saved Searches</dt>
-  <dd>Access to commonly used searches via the client is nice. I tend to do a lot of searches for _smalltalk_ and _clojure_ looking for new people to follow.</dd>
-</dl>
+- Built in Translation := I follow non-english speakers and it would be nice to be able to press a translate button to see what their non-english tweets are. Bonus points for being able to set specific users to be auto-translated.
+- Muting := Ability to mute a user or hashtag for a period of time
+- Saved Searches := Access to commonly used searches via the client is nice. I tend to do a lot of searches for _smalltalk_ and _clojure_ looking for new people to follow.
 
 h3. Can You Help?
 
