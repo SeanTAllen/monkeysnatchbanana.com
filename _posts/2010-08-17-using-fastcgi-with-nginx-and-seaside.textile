@@ -81,7 +81,7 @@ location /
 }
 {% endhighlight%}
 
-Define a location handler[1] that encompasses everything that matches '/'. Any standard uri will match against this location so, you can consider it to be &ldquo;global&rdquo; in scope. Line 26 states that any uri request that would result in an http 403 or 404 response code should be routed to the named location _@seaside_. N.B. This named location is not the same as our upstream block. Nginx will process a request as follows:
+Define a location handler[1] that encompasses everything that matches '/'. Any standard uri will match against this location so, you can consider it to be "global" in scope. Line 26 states that any uri request that would result in an http 403 or 404 response code should be routed to the named location _@seaside_. N.B. This named location is not the same as our upstream block. Nginx will process a request as follows:
 
 *# Check to see if a static asset for the uri exists. If it does, return it.
 *# If a static asset doesn't exist then either a 403 or 404 error will be generated resulting in handing the uri off to the @seaside location.
@@ -107,7 +107,7 @@ location @seaside
 }
 {% endhighlight%}
 
-Define our named @seaside location that is responsible for handling FastCGI. The _include fastcgi_params_ directive has Nginx include its standard FastCGI protocol definitions that are installed at _/etc/nginx/fastcgi_params_. The _fastcgi_pass_ directive simply says: &lsquo;pass all uris from this to the servers defined in the _seaside_ upstream block&rsquo;.
+Define our named @seaside location that is responsible for handling FastCGI. The _include fastcgi_params_ directive has Nginx include its standard FastCGI protocol definitions that are installed at _/etc/nginx/fastcgi_params_. The _fastcgi_pass_ directive simply says: 'pass all uris from this to the servers defined in the _seaside_ upstream block'.
 
 h3. Are We Done?
 
