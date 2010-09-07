@@ -43,6 +43,6 @@ h3. Nice To Have Features
 
 h3. Can You Help?
 
-If you know of a twitter client that meets my needs, please drop me a line via "twitter":http://www.twitter.com/SeanTAllen or <a href="mailto:sean@monkeysnatchbanana.com">email</a>.
+If you know of a twitter client that meets my needs, please drop me a line via "twitter":http://www.twitter.com/SeanTAllen or "email":mailto:sean@monkeysnatchbanana.com.
 
 fn1. e.g. "@SeanTAllen/services":http://twitter.com/SeanTAllen/services
