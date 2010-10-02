@@ -9,7 +9,7 @@ h3. Why FastCGI a.k.a Why Not Reverse Proxy?
 
 I've "previously written":/posts/2010/06/23/reverse-proxying-to-seaside-with-nginx.html about why I prefer reverse proxying to FastCGI. I still believe all those points, however there are certain Seaside deployment situations where FastCGI is currently preferable to reverse proxying. If you are deploying your Seaside application to run on Gemstone's "GLASS":http://seaside.gemstone.com/ then you should give FastCGI serious consideration. The current swazoo adapter that you use when proxying to GLASS is nowhere near as battle tested as the FastCGI adapter. If you want a rock solid deployment, FastCGI will give you much better results than Swazoo. 
 
-h3. Our Bare Bones Nginx FastCGI configuration
+h3. Our Bare Bones Nginx FastCGI Configuration
 
 {% highlight nginx linenos %}
 worker_processes 1;
