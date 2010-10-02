@@ -1,6 +1,6 @@
 ---
 layout: post
-title: In Search of Twitter Client Nirvana
+title: In search of Twitter client nirvana
 summary: Wherein I ask for help finding my perfect Twitter client.
 published: true
 ---
