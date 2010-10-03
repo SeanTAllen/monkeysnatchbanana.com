@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Setting up a Monticello repository using Nginx
-summary: How to setup your own Monticello repository using Nginx and WebDAV.
+summary: How to setup your own private Monticello repository using Nginx and WebDAV.
 published: true
 ---
 
 h3. How Hard Could It Be?
 
-Not very hard; this little monkey who is more interested in bananas did it in no time flat. Setting up and running your own Monticello repository is something almost any Smalltalker should be able to accomplish; as long as your aren't completely command line and systems administration phobic, you should be done with my directions within half an hour.
+Not very hard; this little monkey who is more interested in bananas did it in no time flat. Setting up and running your own private Monticello repository is something almost any Smalltalker should be able to accomplish; as long as your aren't completely command line and systems administration phobic, you should be done with my directions within half an hour.
 
 h3. Installing Nginx with WebDAV Support
 
