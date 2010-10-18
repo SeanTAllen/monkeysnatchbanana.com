@@ -5,7 +5,7 @@ namespace :jekyll do
   end
 
   desc 'Run the jekyll dev server'
-  task :server do
+  task :server => [ :compile ] do
     system "jekyll --server --auto"
   end
 
