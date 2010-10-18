@@ -10,7 +10,7 @@ namespace :jekyll do
   end
 
   desc 'Clean temporary files and run the server'
-  task :compile => [:clean, 'compass:clean', 'compass:compile'] do
+  task :compile => [ :clean, 'compass:clean', 'compass:compile' ] do
     system "jekyll"
   end
 end
@@ -36,6 +36,9 @@ desc 'Clean out temporary files'
 task :clean => [ 'compass:clean', 'jekyll:clean' ] do
 end
 
+desc 'Compile site'
+task :compile => [ 'jekyll:compile' ] do
+end
 
 desc 'Publish to monkeysnatchbanana.com'
 task :publish do
