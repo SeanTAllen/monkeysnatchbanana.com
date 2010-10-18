@@ -3,3 +3,4 @@ pygments: true
 exclude:
   - Rakefile
   - README
+  - config.rb
