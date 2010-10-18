@@ -18,7 +18,7 @@ end
 namespace :compass do  
   desc 'Delete temporary compass files'
   task :clean do
-    system "rm -fR css/*"
+    system "rm -fR css"
   end
 
   desc 'Run the compass watch script'
@@ -44,4 +44,5 @@ desc 'Publish to monkeysnatchbanana.com'
 task :publish do
   system "rake compile"
   system "rsync -v -r -c --delete _site/ msb:/home/public/"
+  system "rake clean"
 end
