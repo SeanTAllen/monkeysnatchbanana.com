@@ -40,8 +40,8 @@ body.bp {
 
 #footer
 {
-  @include prepend-top(10);
-  @include append-bottom(10);
+  @include prepend-top(10px);
+  @include append-bottom(10px);
   padding: 20px 80px 20px 80px;
   overflow: visible;
   z-index: 10;
