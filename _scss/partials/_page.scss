@@ -10,7 +10,6 @@
 body.bp {
   @include blueprint-typography(true);
   @include blueprint-utilities;
-  line-height: 130%;
   @include prepend-top(10px);
 }
 
