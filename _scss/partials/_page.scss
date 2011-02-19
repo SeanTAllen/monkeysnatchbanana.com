@@ -18,12 +18,17 @@ body.bp {
 // Or leave it in if you're happy with how blueprint looks out-of-the-box
 @include blueprint-scaffolding("body.bp");
 
-#container
+div#container
 {  
   @include container;
 }
 
-#header 
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section 
+{ 
+  display:block;
+}
+
+header 
 {  
   background: #00A4DA;
   color: #fff;
@@ -33,12 +38,12 @@ body.bp {
   border: 1px solid gray;
 }
 
-#content
+section#content
 {
   padding: 30px 60px 30px 60px;
 }
 
-#footer
+footer
 {
   @include prepend-top(10px);
   @include append-bottom(10px);
@@ -49,18 +54,17 @@ body.bp {
   font-size: 80%;
 }
 
-#footer span
-{
-  padding-right: 36px;
-}
-
 .footnote
 {
   font-size: 80%;
 }
 
-#posts li
+nav li
 {
   list-style: disc;
 }
 
+section, article, aside, header, footer, nav, figure
+{
+  display: block;
+}
