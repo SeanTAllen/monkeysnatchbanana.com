@@ -17,6 +17,49 @@ body.bp {
 // Or leave it in if you're happy with how blueprint looks out-of-the-box
 @include blueprint-scaffolding("body.bp");
 
+// Modifications to header sizes from blueprint typography
+body.bp {
+  h1 
+  {
+    font-size: 2em;
+    margin-bottom: 0.75em; 
+  }
+
+  h2 
+  {
+    font-size: 1.5em;
+    line-height: 1;  
+    margin-bottom: 1.00em; 
+  }
+
+  h3 
+  {
+    font-size: 1.2em;
+    line-height: 1.25;
+    margin-bottom: 1.25em; 
+  }
+
+  h4 
+  {
+    font-size: 1.1em;
+    line-height: 1.25;  
+    margin-bottom: 1.25em; 
+  }
+
+  h5 
+  {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1.50em; 
+  }
+  
+  h6 
+  {
+    font-size: 1em;
+    font-weight: bold; 
+  }
+}
+
 div#container
 {  
   @include container;
