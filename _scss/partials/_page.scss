@@ -106,7 +106,8 @@ nav li
   list-style: disc;
 }
 
-section, article, aside, header, footer, nav, figure
-{
-  display: block;
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section 
+{ 
+  display:block;
 }
+
