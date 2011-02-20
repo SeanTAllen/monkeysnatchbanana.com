@@ -1,5 +1,6 @@
 // Import the non-default scaffolding module to help us get started.
 @import "partials/syntax";
+@import "partials/typography";
 @import "compass/css3/border-radius";
 @import "compass/css3/box-shadow";
 
@@ -8,55 +9,10 @@
 // This makes it easier to have pages without blueprint styles
 // when you're using a single/combined stylesheet.
 
-body.bp {
-  @include blueprint-typography(true);
-  @include blueprint-utilities;
+body 
+{
+  @include my-typography(true);
   @include prepend-top(10px);
-}
-
-// Modifications to header sizes from blueprint typography
-body.bp {
-  font-family:Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-
-  h1 
-  {
-    font-size: 2em;
-    margin-bottom: 0.75em; 
-  }
-
-  h2 
-  {
-    font-size: 1.5em;
-    line-height: 1;  
-    margin-bottom: 1.00em; 
-  }
-
-  h3 
-  {
-    font-size: 1.2em;
-    line-height: 1.25;
-    margin-bottom: 1.25em; 
-  }
-
-  h4 
-  {
-    font-size: 1.1em;
-    line-height: 1.25;  
-    margin-bottom: 1.25em; 
-  }
-
-  h5 
-  {
-    font-size: 1em;
-    font-weight: bold;
-    margin-bottom: 1.50em; 
-  }
-  
-  h6 
-  {
-    font-size: 1em;
-    font-weight: bold; 
-  }
 }
 
 div#container
@@ -105,9 +61,3 @@ nav li
 {
   list-style: disc;
 }
-
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section 
-{ 
-  display:block;
-}
-
