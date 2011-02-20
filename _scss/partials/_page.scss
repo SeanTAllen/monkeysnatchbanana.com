@@ -13,10 +13,6 @@ body.bp {
   @include prepend-top(10px);
 }
 
-// Remove the scaffolding when you're ready to start doing visual design.
-// Or leave it in if you're happy with how blueprint looks out-of-the-box
-@include blueprint-scaffolding("body.bp");
-
 // Modifications to header sizes from blueprint typography
 body.bp {
   h1 
