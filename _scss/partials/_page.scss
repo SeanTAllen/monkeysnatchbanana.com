@@ -1,6 +1,7 @@
 // Import the non-default scaffolding module to help us get started.
 @import "blueprint/scaffolding";
 @import "partials/syntax";
+@import "compass/css3/border-radius";
 
 // This configuration will only apply the
 // blueprint styles to pages with a body class of "bp"
@@ -68,6 +69,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section
 
 header[|role='banner'] 
 {  
+  @include border-radius;
   background: #00A4DA;
   color: #fff;
   overflow: visible;
