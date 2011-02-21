@@ -94,7 +94,7 @@ auth_basic "Monticello access restricted";
 auth_basic_user_file /PATH_TO_OUR_PASSWORD_FILE;
 {% endhighlight %}
 
-Protects our Monticello repository from anonymous access using HTTP Basic Authentication. _/PATH_TO_OUR_PASSWORD_FILE_ should be replaced with the location of your password file. Your password file can be generated either using Apache's htpasswd application or using "http://wiki.nginx.org/NginxFaq#How_do_I_generate_an_httpasswd_file_without_having_Apache_tools_installed":this python script. N.B. Your password file has to be readable by the user that Nginx is running as. When installing from source, the default Nginx user is 'nobody'; the default in Debian Linux is 'www-data'.
+Protects our Monticello repository from anonymous access using HTTP Basic Authentication. _/PATH_TO_OUR_PASSWORD_FILE_ should be replaced with the location of your password file. Your password file can be generated either using Apache's htpasswd application or using "this python script":http://wiki.nginx.org/NginxFaq#How_do_I_generate_an_httpasswd_file_without_having_Apache_tools_installed. N.B. Your password file has to be readable by the user that Nginx is running as. When installing from source, the default Nginx user is 'nobody'; the default in Debian Linux is 'www-data'.
 
 h3. Line 23
 
