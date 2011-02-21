@@ -1,11 +1,28 @@
 @import "blueprint";
 @import "partials/syntax";
 
-//Recommended Blueprint configuration with scoping and semantic layout:
-body.bp {
-  @include blueprint-print(true); }
+// Recommended Blueprint configuration with scoping and semantic layout:
+body.bp 
+{
+  @include blueprint-print(true); 
+}
 
 header[role="banner"]
 {
   display: none;
+}
+
+// add urls after links when printing
+section#content
+{
+  a
+  {
+    text-decoration: none;
+  }
+
+  a:link:after, a:visited:after
+  {
+    content: " -> (" attr(href) ") ";
+    font-size: 80%;
+  }
 }

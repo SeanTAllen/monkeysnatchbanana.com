@@ -36,6 +36,11 @@ header[role='banner']
   border: 1px solid gray;
 }
 
+header hgroup hr
+{
+  margin-bottom: 0.75em;
+}
+
 section#content
 {
   padding: 30px 60px 30px 60px;
