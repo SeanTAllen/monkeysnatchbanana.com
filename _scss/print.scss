@@ -17,11 +17,12 @@ section#content
 {
   a
   {
+    color: #520;
     text-decoration: none;
   }
 
   a:link:after, a:visited:after
-  {
+  {  
     content: " -> (" attr(href) ") ";
     font-size: 80%;
   }
