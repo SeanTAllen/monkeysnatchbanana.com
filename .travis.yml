@@ -1,0 +1,13 @@
+
+language: go
+install: go get -u -v github.com/spf13/hugo
+
+branches:
+    only:
+        source
+
+script:
+    - hugo
+
+after_success:
+    - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "source" && bash deploy.sh
