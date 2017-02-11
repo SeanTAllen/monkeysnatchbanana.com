@@ -1,8 +1,8 @@
 <section class="author">
-    {{ $author_file :=  printf "/data/author/%s.json" .Params.author }}
-    {{ $author_json := getJSON $author_file }}
-    <div class="authorimage" style="background: url(/images/author/{{ $author_json.avatar }})"></div>
-    <p class="attr">AUTHOR</p>
-    <h4>{{ $author_json.name }}</h4>
-    <p class="bio">{{  $author_json.bio | markdownify }}</p>
+    <div class="authorimage" style="background: url({{ "img/avatar.jpg" | absURL }})"></div>
+    <h4>{{ .Site.Params.name }}</h4>
+    <p class="bio">{{  .Site.Params.bio | markdownify }}</p>
+    <p class="meta">
+      {{ with .Site.Params.location }}<i class="fa fa-fw fa-map-marker"></i> {{ . }}{{ end }}
+    </p>
 </section>
