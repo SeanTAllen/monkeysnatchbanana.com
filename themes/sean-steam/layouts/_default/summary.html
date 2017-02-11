@@ -7,8 +7,8 @@
         {{ if and (not .Description) (.Site.Params.useSummaryIfNoDescription)}}
         <p>{{ .Summary }}&hellip;</p>
         {{ else }}
-        <p>{{ .Description | markdownify }}&hellip;</p>
+        <p>{{ .Description | markdownify }}</p>
         {{ end }}
-        <p class="readmore"><a href="{{ .Permalink }}">{{ .Site.Params.keepReadingStr }} <i class="fa fa-angle-double-right" style="padding-left: 5px;"></i></a></p>
+        <p class="readmore"><a href="{{ .Permalink }}">{{ .Site.Params.keepReadingStr }} <i class="fa fa-chevron-circle-right" style="padding-left: 5px;"></i></a></p>
     </section>
 </article>

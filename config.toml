@@ -39,7 +39,7 @@ paginate = 5
   bitbucket = ""
 
   # Customize or translate the strings
-  keepReadingStr = "Keep reading"
+  keepReadingStr = "READ THIS ARTICLE"
   backtotopStr = "Back to top"
   shareStr = "Share"
   pageNotFoundTitle = "404 - Page not found"
