@@ -1,3 +1,46 @@
+baseurl = "http://www.monkeysnatchbanana.com"
 languageCode = "en-us"
-title = "My New Hugo Site"
-baseurl = "http://example.org/"
+title = "Monkey Snatch Banana"
+theme = "sean-steam"
+# Enable Google Analytics be inserting your tracking code
+# Number of posts per page
+paginate = 5
+
+[permalinks]
+  post = "/:year/:month/:day/:title/"
+
+[params]
+  title = "Monkey Snatch Banana"
+  copyright = ""
+
+  # You can choose between green, orange, red and blue.
+  themecolor = "blue"
+
+  # Link custom assets relative to /static
+  favicon   = "favicon.ico"
+  customCSS = []
+  customJS  = []
+
+  # To provide some metadata for search engines and the about section in the footer
+  # feel free to add a few information about you and your website.
+  name = "Sean T Allen"
+  bio = "Co-author of [Storm Applied: Strategies for real-time event processing](http://manning.com/sallen/?a_aid=sallen)"
+  description = ""
+
+  # Link your social networks (optional)
+  location = ""
+  twitter = "seantallen"
+  linkedin = ""
+  googleplus = ""
+  facebook = ""
+  instagram = ""
+  github = "seantallen"
+  gitlab = ""
+  bitbucket = ""
+
+  # Customize or translate the strings
+  keepReadingStr = "Keep reading"
+  backtotopStr = "Back to top"
+  shareStr = "Share"
+  pageNotFoundTitle = "404 - Page not found"
+  useSummaryIfNoDescription = true
