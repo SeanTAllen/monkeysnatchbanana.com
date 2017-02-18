@@ -1,9 +1,11 @@
 {{ if .Site.Menus.main }}
+{{ $nitems := sub (len .Site.Menus.main) 1}}
 <nav class="menu" role="nav">
     <ul>
-        {{ range .Site.Menus.main }}
+        {{ range $index, $item := .Site.Menus.main }}
         	<li class="nav nav-current"><a href="{{ .URL }}">{{ .Name }}</a></li>
-      	{{end}}
+          {{ if ne $index $nitems }}<li>|</li>{{ end }}
+      	{{ end }}
     </ul>
 </nav>
 {{ end }}

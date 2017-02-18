@@ -44,3 +44,16 @@ paginate = 5
   shareStr = "Share"
   pageNotFoundTitle = "404 - Page not found"
   useSummaryIfNoDescription = true
+
+[[menu.main]]
+    name = "About"
+    weight = -110
+    url = "/about/"
+[[menu.main]]
+    name = "Storm Applied"
+    weight = -100
+    url = "http://manning.com/sallen/?a_aid=sallen"
+[[menu.main]]
+    name = "RSS"
+    weight = -90
+    url = "/index.xml"
