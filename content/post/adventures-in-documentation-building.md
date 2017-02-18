@@ -4,7 +4,7 @@ date = "2017-02-18T09:22:51-05:00"
 title = "Adventures in Documentation Building"
 tags = ["tag 1","tag 2"]
 author = "Sean T. Allen"
-slug = "adventures-in-documentation-building
+slug = "adventures-in-documentation-building"
 
 +++
 
