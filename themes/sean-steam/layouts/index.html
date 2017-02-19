@@ -1,5 +1,5 @@
 {{ define "main" }}
-    {{ $paginator := .Paginate .Data.Pages.ByDate.Reverse }}
+    {{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Section" "post")}}
     {{ range $paginator.Pages }}
         {{ if not .Params.hide }}
            {{ .Render "summary" }}
@@ -7,4 +7,4 @@
     {{ end }}
 
     {{ partial "pagination" . }}
-{{ end }}   
+{{ end }}
