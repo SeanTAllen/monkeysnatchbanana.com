@@ -1,7 +1,7 @@
 +++
 date = "2013-05-03T13:21:47-05:00"
 title = "Varnish in Five Acts"
-draft = false
+draft = true
 tags = ["varnish","scaling"]
 author = "Sean T. Allen"
 slug = "varnish-in-five-acts"
