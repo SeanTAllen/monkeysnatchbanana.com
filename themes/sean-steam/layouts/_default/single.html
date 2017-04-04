@@ -2,15 +2,15 @@
 <article class="post">
     <header>
         {{ if .Params.tags }}
-          <div class="post-meta tags">
+        <div class="post-meta tags">
           Posted in
           {{ $ntags := sub (len .Params.tags) 1}}
           {{ range $index, $tag := .Params.tags }}
             {{ $url := printf "tags/%s" ( . | urlize) }}
             <a href="{{ $url | absURL }}">{{ . }}</a>{{if ne $index $ntags }}, {{ end }}
           {{ end }}
-        {{ end }}
         </div>
+        {{ end }}
         <h1 class="post-title">{{ .Title }}</h1>
         <div class="post-meta">
             <time datetime="{{ .Date.Format "02 January 2006" }}">
