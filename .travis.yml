@@ -1,13 +1,19 @@
-
-language: go
-install: go get -u -v github.com/spf13/hugo
+install: brew install hugo
 
 branches:
-    only:
-        source
+  only:
+    source
+
+matrix:
+  include:
+    - os: osx
 
 script:
-    - hugo
+  # print the version so if someone runs into trouble, its easier to debug
+  - hugo version;
+  # generate the site
+  - hugo;
 
 after_success:
-    - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "source" && bash deploy.sh
+  # deploy if we are on source and its not a PR
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "source" && bash deploy.sh
