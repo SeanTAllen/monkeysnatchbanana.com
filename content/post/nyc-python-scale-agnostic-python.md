@@ -3,7 +3,7 @@ draft = false
 date = "2017-08-19T11:56:56-04:00"
 title = "NYC Python: Scale Agnostic Python"
 tags = ["talks","python", "distributed systems", "slides", "wallaroo", "scale agnostic"]
-description = "Post with information about my August 17, 2017 NYC Python talk \"Scale Agnostic Python? How to scale your Python application without any code changes*\"."
+description = "Post with information about my August 17, 2017 NYC Python talk \"Scale Agnostic Python? How to scale your Python application without any code changes\"."
 author = "Sean T. Allen"
 slug = "nyc-python-aug-17-scale-agnostic-python"
 +++
