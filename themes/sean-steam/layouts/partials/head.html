@@ -20,20 +20,20 @@
     title="{{ .Site.Title }}" />
     {{ end }}
 
-    <link rel="shortcut icon" href="{{ "img/favicon.ico" | absURL }}">
+    <link rel="shortcut icon" href="{{ "img/favicon.ico" | relURL }}">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
     {{ "<!-- Stylesheets -->" | safeHTML }}
-    <link rel="stylesheet" href="{{ "css/screen.css" | absURL }}">
-    <link rel="stylesheet" href="{{ "css/github.css" | absURL }}">
+    <link rel="stylesheet" href="{{ "css/screen.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/github.css" | relURL }}">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
     {{ range .Site.Params.customCSS }}
-    <link rel="stylesheet" href="{{ . | absURL }}">
+    <link rel="stylesheet" href="{{ . | relURL }}">
     {{ end }}
 
     {{ with .Site.Params.favicon }}
-    <link rel="shortcut icon" type="image/x-icon" href="{{ . | absURL }}">
-    <link rel="icon" type="image/x-icon" href="{{ . | absURL }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ . | relURL }}">
+    <link rel="icon" type="image/x-icon" href="{{ . | relURL }}">
     {{ end }}
 
     {{ "<!-- Stylesheet for theme color -->" | safeHTML }}

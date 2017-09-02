@@ -1,9 +1,9 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="{{ "js/index.js" | absURL }}"></script>
-<script src="{{ "js/smooth-scroll.min.js" | absURL }}"></script>
+<script src="{{ "js/index.js" | relURL }}"></script>
+<script src="{{ "js/smooth-scroll.min.js" | relURL }}"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
 {{ range .Site.Params.customJS }}
-<link rel="stylesheet" href="{{ . | absURL }}">
+<link rel="stylesheet" href="{{ . | relURL }}">
 {{ end }}
 
 <script>
