@@ -13,7 +13,7 @@ date = "2017-09-02T10:20:46-05:00"
 
 Video of my QCon New York talk: ["Pony- How I learned to stop worrying and embrace an unproven technology"](https://www.infoq.com/presentations/pony-wallaroo) is now available. 
 
-The talk details my experiences thus far in using [Pony](https://www.ponylang.org) at [Sendence](https://twitter.com/sendenceeng) to build Wallaroo, a high-performance stream processing system. The talk was part of a FinTech track so there's a slight Fintech bent to some of the content that probably wouldn't have been in the talk otherwise.
+The talk details my experiences thus far in using [Pony](https://www.ponylang.org) at [Wallaroo Labs](https://twitter.com/wallaroolabs) to build Wallaroo, a high-performance stream processing system. The talk was part of a FinTech track so there's a slight Fintech bent to some of the content that probably wouldn't have been in the talk otherwise.
 
 ---
 

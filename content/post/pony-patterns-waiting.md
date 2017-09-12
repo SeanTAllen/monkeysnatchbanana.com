@@ -18,7 +18,7 @@ date = "2016-01-16T10:46:33-05:00"
 >
 > --- Ian MacKaye
 
-How do you wait when you can't wait? No, that isn't a riddle; it's a question I recently faced while writing some [Pony](http://www.ponylang.org) code for [work](http://www.sendence.com). 
+How do you wait when you can't wait? No, that isn't a riddle; it's a question I recently faced while writing some [Pony](http://www.ponylang.org) code for [work](https://www.wallaroolabs.com). 
 
 Here's the problem: I'm writing a black box testing application that will verify the correctness of our system under test. My black box tester sends information into the box via UDP and gets data back via the same means and verifies that the data is valid. That system under test is currently a prototype written in Python. All things considered, it performs well. The problem is Pony performs better. 
 
