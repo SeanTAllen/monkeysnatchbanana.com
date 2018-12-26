@@ -44,7 +44,7 @@ Really, there are two styles of estimation that I'd like my tools to support.
 ### High-level estimation
 I want to be able to give quick, high-level estimates of things. For example- tiny, small, medium, large, huge that are a quick "we think it will take handwave amount of time." These are useful for getting a really rough idea of the amount of effort something would involve.
 
-## Fine-grained estimation
+### Fine-grained estimation
 
 I want to be able to apply estimates to that switch from a handwave amount of time to a granular estimate that is measured in days (it would be nice because some tasks are small to be able to measure in hours as well, but in the end, I could do without this).
 
