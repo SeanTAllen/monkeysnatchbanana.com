@@ -149,7 +149,7 @@ Welp, that's where I got to with this morning's list. Now that I'm here, I reali
 
 I think I'm going to start making lists for different areas like code management, code review, integrated CI and what not and slowly build up my list of "what I want in my code management tool" for real. I feel happy with this as a first pass.
 
-Looking around, even though I'm a heavy [GitHub user](https://github.com/seantallen/), it looks like Gitlab is the currently tool that would most likely end up fulfilling my desires. 
+Looking around, even though I'm a heavy [GitHub user](https://github.com/seantallen/), it looks like [Gitlab is the currently tool that would most likely end up fulfilling my desires](https://about.gitlab.com/features/). 
 
 Got thoughts on things you'd like to see in a "GitHub like" tool? I'd love to hear them. Feel free to ping me on [Twitter](https://twitter.com/seantallen).
 
