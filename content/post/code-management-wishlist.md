@@ -21,7 +21,7 @@ Image an issue for example that is made up of 3 other issues. Each of those issu
 
 ## Triage system
     
-You can fake this with tags in something like GitHub, but it's a pain. For every issue, I want to be able to say it is for "now, later, or done." An issue can move from any state to any other state. (https://en.wikipedia.org/wiki/Triage).
+You can fake this with tags in something like GitHub, but it's a pain. For every issue, I want to be able to say it is for "now, later, or done." An issue can move from any state to any other state. See [https://en.wikipedia.org/wiki/Triage](https://en.wikipedia.org/wiki/Triage) for more information.
 
 When something is marked as "later," I should be prompted in the future to reconsider it. "You said later for X, is it later yet? Should that become a now?"
     
