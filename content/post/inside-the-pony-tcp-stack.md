@@ -23,7 +23,7 @@ Let's get started...
 
 ## A Skeleton for a Pony TCP server
 
-<img src="http://videos.hasbro.com/img/694893024001/201502/1058/694893024001_4070167773001_MLP-MV-ThePerfectStallion-SingAlong-FINAL-720H264-vs.jpg?pubId=694893024001" align="center">
+<img src="https://videos.hasbro.com/img/694893024001/201502/1058/694893024001_4070167773001_MLP-MV-ThePerfectStallion-SingAlong-FINAL-720H264-vs.jpg?pubId=694893024001" align="center">
 
 Our echo server is built around a two classes that implement interfaces that are part of the Pony network stack. Each method in the interfaces corresponds to an event that can happen while interacting with or attempting to interact with a network resource. The particulars aren't that important right now, what is important is recognizing the callback driven nature of network programming with Pony. Pony handles the details of networking programming while users of the API are responsible for providing code that runs at certain key points. Here's the interface for _listeners_. As you will see when we cover TCP/IP server basics soon, the methods in the _TCPListenNotify_ interface map to events that can occur in server applications that are responsible for dispatching incoming requests.
 
@@ -158,7 +158,7 @@ Go ahead and review those steps until you feel comfortable with them. If you are
 
 ## An echo server redux
 
-<img src="http://www.cs.northwestern.edu/~agupta/_projects/networking/TCPClientServer/cs.gif" align="right">
+<img src="https://www.cs.northwestern.edu/~agupta/_projects/networking/TCPClientServer/cs.gif" align="right">
 
 Recapping our echo server code from last time, we are going to dive in from:
 
@@ -175,8 +175,6 @@ I previously described this code as:
 In that post, we didn't go into _TCPListener_ to see how it's implemented. Let's pull back that veil and move down another layer of abstraction.
 
 ## A little bit of TCP/IP in Pony
-
-<img src="http://mylittlepony.hasbro.com/images/ponies/ponies_pinkiepie.jpg" align="right">
 
 The Pony TCP stack is a powered by combination of callback objects and events. As we move through the code, this will become more and more clear. Let's take a look at the _TCPListener ipv4_ constructor that we called from our _Main_ actor in our echo server:
 
@@ -354,7 +352,7 @@ Great! Now we are bound and listening and are ready to receive events related to
 
 ## Back to our echo server
 
-<img src="http://t07.deviantart.net/JyMOqvGHj7ZX4s7XelqnI86rk8g=/300x200/filters:fixed_height(100,100):origin()/pre03/3fd6/th/pre/i/2013/265/e/1/night_watch_the_bat_pony_2_by_zee66-d6nfuuc.png" align="right">
+<img src="https://t07.deviantart.net/JyMOqvGHj7ZX4s7XelqnI86rk8g=/300x200/filters:fixed_height(100,100):origin()/pre03/3fd6/th/pre/i/2013/265/e/1/night_watch_the_bat_pony_2_by_zee66-d6nfuuc.png" align="right">
 
 So we have a socket bound and listening. What now? Let's take a look again inside _TCPListener's ip4_ constructor and see how it triggers our first callback ```listening``` on our _TCPListenNotify_ implementor.
 
@@ -416,7 +414,7 @@ But hey, we're now listening on our socket and we've printed out a log message. 
 
 ## Accepting a connection
 
-<img src="http://img04.deviantart.net/d968/i/2014/078/7/f/vampire_pony_sisters_by_magister39-d7au3ef.png" width="200" align="right">
+<img src="https://img04.deviantart.net/d968/i/2014/078/7/f/vampire_pony_sisters_by_magister39-d7au3ef.png" width="200" align="right">
 
 You might remember from earlier that in ```os_listen``` we used ```asio_event_subscribe``` to register that our _TCPListener_ instance was interested in knowing about ```ASIO_READ``` events on our socket. Whenever an event is generated, it will be delivered to our actor by calling its ```_event_notify``` behavior.
 
@@ -635,8 +633,6 @@ fun ref received(conn: TCPConnection ref, data: Array[U8] iso) =>
 ```
 
 ## Wrapping up
-
-<img src="http://img12.deviantart.net/fb22/i/2013/208/4/6/__human_pony_4___by_the_butch_x-d6fh2f0.png" width="250" align="right">
 
 We've made our way though a lot of Pony and C code to get to this point where we can see how our simple echo server works.
 I hope by now you feel like you have a grasp on how BSD socket programming works and nice event based abstractions that Pony provides for working with it. If you are interested in learning more about TCP/IP programming, I highly recommend you pick up all 3 volumes of W. Richard Steven's classic _TCP/IP Illustrated_ series:
